@@ -5,6 +5,9 @@ branches:
 addons:
   chrome: stable
 
-script:
-  - exit 0
-
+jobs:
+  include:
+    - stage: test1
+       script: echo "Test Completed Successfully"
+    - stage: deploy
+       script: echo "Deployed"
