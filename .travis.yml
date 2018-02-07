@@ -1,0 +1,10 @@
+branches:
+  only:
+  - master
+
+addons:
+  chrome: stable
+
+script:
+  - exit 0
+
