@@ -11,7 +11,7 @@ branches:
   
 jobs:
   include:
-    - stage: unit tests
+    - stage: test 1
       script: echo one
     - stage: unit tests
-      script: echo two
+      script: test 2
