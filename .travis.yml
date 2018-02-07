@@ -8,10 +8,10 @@ node_js:
 branches:
   only:
   - master
-
+  
 jobs:
   include:
-    - stage: test1
-     - script: echo "Test Completed Successfully"
-    - stage: deploy
-     - script: echo "Deployed"
+    - stage: unit tests
+      script: echo one
+    - stage: unit tests
+      script: echo two
