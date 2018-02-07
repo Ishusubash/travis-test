@@ -12,6 +12,6 @@ branches:
 jobs:
   include:
     - stage: test1
-       script: echo "Test Completed Successfully"
+    - script: echo "Test Completed Successfully"
     - stage: deploy
-       script: echo "Deployed"
+    - script: echo "Deployed"
