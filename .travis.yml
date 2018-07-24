@@ -1,17 +1,14 @@
-dist: trusty
-sudo: required
-
 language: node_js
+
 node_js:
   - 8
 
 branches:
   only:
   - master
-  
-jobs:
-  include:
-    - stage: test 1
-      script: echo one
-    - stage: unit tests
-      script: test 2
+
+install:
+  - npm install
+
+script:
+  - npm run test
